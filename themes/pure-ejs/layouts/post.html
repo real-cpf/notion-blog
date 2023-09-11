@@ -39,7 +39,7 @@
     <% if (post.date || post.tags.length) { %>
       <div class="DateTagBar">
         <% if (post.date) { %>
-          <span class="DateTagBar__Item DateTagBar__Date">Posted on <%= post.dateString %></span>
+          <span class="DateTagBar__Item DateTagBar__Date">发布于 <%= post.dateString %></span>
         <% } %>
         <% post.tags.forEach(function(tag) { %>
           <span class="DateTagBar__Item DateTagBar__Tag DateTagBar__Tag--<%= tag.color %>">
@@ -49,7 +49,9 @@
       </div>
     <% } %>
   </header>
-  <%- post.contentHTML %>
+  <div style="min-height:80%;">
+    <%- post.contentHTML %>
+  </div>
   <%- include('partials/footer.html', { siteMeta }) %>
 </body>
 

@@ -4,7 +4,7 @@
       <% if (siteMeta.iconUrl) { %>
         <span><img class="inline-img-icon" src="<%= siteMeta.iconUrl %>"></span>&nbsp;
       <% } %>
-      <span>Home</span>
+      <span>首页</span>
     </div>
   </a>
   <% siteMeta.pages.forEach(function(page) { %>
@@ -20,4 +20,11 @@
       </a>
     <% } %>
   <% }) %>
+
+
+  <a href="https://realcpf.tech" style="position:absolute;right:5%">
+    <div>
+      主站
+    </div>
+  </a>
 </nav>
